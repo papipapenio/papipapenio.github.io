@@ -1,17 +1,19 @@
 {
-  "name": "HTML Dev Environment",
+  "name": "HTML & CSS Dev Environment",
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
   "customizations": {
     "vscode": {
       "extensions": [
-        "ms-vscode.live-server" // This is the ID for Microsoft Live Preview
+        "ms-vscode.live-server",
+        "eamodio.gitlens"
       ],
       "settings": {
         "files.autoSave": "afterDelay",
         "files.autoSaveDelay": 1000,
-        "livePreview.autoRefreshPreview": "onAnyChange"
+        "livePreview.autoRefreshPreview": "onAnyChange",
+        "editor.formatOnSave": true
       }
     }
   },
-  "forwardPorts": [5500] // Live Preview usually runs on port 5500
+  "forwardPorts": [5500]
 }
